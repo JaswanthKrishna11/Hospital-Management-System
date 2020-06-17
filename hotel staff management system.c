@@ -70,7 +70,7 @@ int s;
 
 char findstaff;
 
-char password[10]={"ourTeam"};
+char password[10]={"coders@psgtech"};
 
 
 
