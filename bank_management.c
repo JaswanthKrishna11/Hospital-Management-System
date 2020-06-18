@@ -15,23 +15,6 @@ struct acc_type
 };
 struct acc_type account[20];
 
-/*
-     printf("The above structure can be declared using
-     typedef like below");
-
-     typedef struct acc_type
-     {
-        char bank_name[20];
-        char bank_branch[20];
-        char acc_holder_name[30];
-        int acc_number;
-        char acc_holder_address[100];
-        float available_balance;
-     }Acc_detail;
-
-     Acc_detail account[20];
-*/
-
 int num_acc;
 
 void Create_new_account();
@@ -40,17 +23,14 @@ void Cash_withdrawl();
 void Account_information();
 void Log_out();
 void display_options();
-
-/* main program */
+//main function
 int main()
 {
     char option;
-    char f2f[50] = "http://fresh2refresh.com/";
     num_acc=0;
     while(1)
     {
        printf("\n*** Welcome to Bank Application ***\n");
-       printf("\nThis demo program is brought you by %s",f2f);
        display_options();
        printf("Please enter any options (1/2/3/4/5/6) ");
        printf("to continue : ");
@@ -79,13 +59,13 @@ int main()
     return 0;
 }
 
-/Function to display available options in this application/
+//Function to display available options in this application/
 
 void display_options()
 {
     printf("\n1. Create new account \n");
     printf("2. Cash Deposit \n");
-    printf("3. Cash withdrawl \n");
+    printf("3. Cash withdrawal \n");
     printf("4. Account information \n");
     printf("5. Log out \n");
     printf("6. Clear the screen and display available ");
@@ -146,7 +126,7 @@ void Create_new_account()
 void Account_information()
 {
      register int num_acc = 0;
-     //if (!strcmp(customer,account[count].name))
+
      while(strlen(account[num_acc].bank_name)>0)
      {
          printf("\nBank name                : %s \n" ,
@@ -165,7 +145,7 @@ void Account_information()
      }
 }
 
-// Function to deposit amount in an account
+//  deposit amount in an account
 
 void Cash_Deposit()
 {
@@ -179,17 +159,16 @@ void Cash_Deposit()
    printf("\nEnter money you want to deposit :  ");
    scanf("%f",&add_money);
 
-   while (acc_no=account[acc_no-1].acc_number)
+   while (acc_no == account[acc_no-1].acc_number)
    {
-         account[acc_no-1].available_balance=
-         account[acc_no-1].available_balance+add_money;
-         printf("\nThe New balance for account %d is %f \n",
-         acc_no, account[acc_no-1].available_balance);
+         account[acc_no-1].available_balance += add_money;
+         printf("\nThe New balance for account %d is %f \n",acc_no, account[acc_no-1].available_balance);
          break;
-   }acc_no++;
+   }
+   acc_no++;
 }
 
-// Function to withdraw amount from an account
+// withdraw amount from an account
 
 void Cash_withdrawl()
 {
