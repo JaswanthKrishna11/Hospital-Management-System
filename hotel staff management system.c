@@ -70,7 +70,7 @@ int s;
 
 char findstaff;
 
-char password[10]={"pass"};
+char password[10]={"coders@psg"};
 
 
 
@@ -1020,8 +1020,6 @@ void Password(void)
 
 {
 
-
-
 system("cls");
 
 char d[25]="Password Protected";
@@ -1030,23 +1028,15 @@ char ch,pass[10];
 
 int i=0,j;
 
-
-
-
-
-	printf("\t\t\t\tWELCOME\n\t\t\t\t  To \n\t\t   \xB2\xB2\xB2\xB2\xB2\xB2 Hotel Staff Management System \xB2\xB2\xB2\xB2\xB2\xB2\n");
+	printf("\t\t\t\tWELCOME\n\t\t\t\t  To \n\t\t   \xB2\xB2\xB2\xB2\xB2\xB2 Hotel Staff Management System   \xB2\xB2\xB2\xB2\xB2\xB2\n");
 
 	printf("\t \n\n\n Enter Password:");
-
-
 
 while(ch!=13)
 
 {
 
 ch=getch();
-
-
 
 if(ch!=13 && ch!=8){
 
@@ -1068,7 +1058,7 @@ if(strcmp(pass,password)==0)
 
 printf("\n\n\n\t\tPassword matched!!");
 
-printf("\n\n\tPress any key to countinue.....");
+printf("\n\n\tPress any key to continue.....");
 
 getch();
 
