@@ -34,7 +34,7 @@ int main()
        display_options();
        printf("Please enter any options (1/2/3/4/5/6) ");
        printf("to continue : ");
-        
+
     option = getch();
         printf("%c \n", option);
         switch(option)
@@ -74,8 +74,7 @@ void display_options()
     printf("options \n\n");
 }
 
-/* Function to create new account */
-
+// Function to create new account
 void Create_new_account()
 {
    char bank_name[20];

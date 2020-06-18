@@ -93,7 +93,7 @@ int main()
 void add()
 {
     printf("\n\n");
-    printf("Already data inputed on the database =%d\n\n",num);//how many inputs
+    printf("Already data inputed on the database =%d\n\n",num);
     printf("How many entry do you want to add=\n");
     scanf("%d",&n);
     sum=n+num;
@@ -222,7 +222,7 @@ void search()
         else
             printf("\n\nNot Found\n\n");
     }
-    else if(h==2)//problem is here.........
+    else if(h==2)
     {
         int f=1;
         fflush(stdin);
