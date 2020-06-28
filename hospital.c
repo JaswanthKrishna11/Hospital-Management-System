@@ -18,7 +18,8 @@ int main()
 {
     read();
     int c,i,q;
-    
+
+    printf("Simple Hospital Management System\n");
     int m,n;
 ////making out the pattern
 
