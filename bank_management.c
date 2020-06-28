@@ -2,6 +2,8 @@
 #include <conio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <float.h>
+#include <time.h>
 
 // Structure declaration
 struct acc_type
