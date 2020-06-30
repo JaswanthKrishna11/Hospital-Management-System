@@ -154,7 +154,7 @@ void edit()
         scanf("%d",&p);//serial number
         if(p<num)
         {
-            if(q==1)
+            if(q==1) //option
             {
                 fflush(stdin);
                 printf("Enter the new name=");
