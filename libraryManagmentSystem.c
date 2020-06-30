@@ -5,7 +5,7 @@
 #define MIN_YR  1900
 #define MAX_SIZE_USER_NAME 30
 #define MAX_SIZE_PASSWORD  20
-#define FILE_NAME  "AticleworldLibBookS.bin"
+#define FILE_NAME  "CodersPsg.bin"
 // Macro related to the books info
 #define MAX_BOOK_NAME   50
 #define MAX_AUTHOR_NAME 50
@@ -28,7 +28,7 @@ typedef struct// to call in program
 {
     unsigned int books_id; // declare the integer data type
     char bookName[MAX_BOOK_NAME];// declare the character data type
-    char authorName[MAX_AUTHOR_NAME];// declare the charecter data type
+    char authorName[MAX_AUTHOR_NAME];// declare the character data type
     char studentName[MAX_STUDENT_NAME];// declare the character data type
     char studentAddr[MAX_STUDENT_ADDRESS];// declare the character data type
     Date bookIssueDate;// declare the integer data type
@@ -51,13 +51,8 @@ void printMessageCenter(const char* message)
 void headMessage(const char *message)
 {
     system("cls");
-    printf("\t\t\t###########################################################################");
-    printf("\n\t\t\t############                                                   ############");
     printf("\n\t\t\t############      Library management System Project in C       ############");
-    printf("\n\t\t\t############                                                   ############");
-    printf("\n\t\t\t###########################################################################");
-    printf("\n\t\t\t---------------------------------------------------------------------------\n");
-    printMessageCenter(message);
+   printMessageCenter(message);
     printf("\n\t\t\t----------------------------------------------------------------------------");
 }
 void welcomeMessage()
